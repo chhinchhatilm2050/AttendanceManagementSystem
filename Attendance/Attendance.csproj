@@ -60,6 +60,12 @@
     <Compile Include="Student\formStudent.Designer.cs">
       <DependentUpon>formStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\formTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\formTeacher.Designer.cs">
+      <DependentUpon>formTeacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validation\ValidationInfos.cs" />
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
@@ -75,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="Student\formStudent.resx">
       <DependentUpon>formStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\formTeacher.resx">
+      <DependentUpon>formTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

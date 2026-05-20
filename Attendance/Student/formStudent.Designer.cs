@@ -49,8 +49,8 @@
             this.dtp_student_dob = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_student_isactive = new System.Windows.Forms.RadioButton();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.btn_close = new System.Windows.Forms.Button();
+            this.btn_student_save = new System.Windows.Forms.Button();
+            this.btn_student_close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.pictureBox1.Location = new System.Drawing.Point(455, 59);
+            this.pictureBox1.Location = new System.Drawing.Point(533, 90);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 167);
             this.pictureBox1.TabIndex = 0;
@@ -70,7 +70,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(394, 9);
+            this.label1.Location = new System.Drawing.Point(472, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 32);
             this.label1.TabIndex = 1;
@@ -83,7 +83,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(157, 251);
+            this.label2.Location = new System.Drawing.Point(235, 282);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 2;
@@ -93,7 +93,7 @@
             // 
             this.txt_student_code.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_student_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_student_code.Location = new System.Drawing.Point(160, 272);
+            this.txt_student_code.Location = new System.Drawing.Point(238, 303);
             this.txt_student_code.Name = "txt_student_code";
             this.txt_student_code.Size = new System.Drawing.Size(291, 27);
             this.txt_student_code.TabIndex = 3;
@@ -103,7 +103,7 @@
             // 
             this.txt_student_firstname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_student_firstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_student_firstname.Location = new System.Drawing.Point(591, 272);
+            this.txt_student_firstname.Location = new System.Drawing.Point(669, 303);
             this.txt_student_firstname.Name = "txt_student_firstname";
             this.txt_student_firstname.Size = new System.Drawing.Size(291, 27);
             this.txt_student_firstname.TabIndex = 4;
@@ -114,9 +114,10 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(588, 251);
+            this.label3.Location = new System.Drawing.Point(666, 282);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 18);
             this.label3.TabIndex = 5;
@@ -126,7 +127,7 @@
             // 
             this.txt_student_lastname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_student_lastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_student_lastname.Location = new System.Drawing.Point(160, 333);
+            this.txt_student_lastname.Location = new System.Drawing.Point(238, 364);
             this.txt_student_lastname.Name = "txt_student_lastname";
             this.txt_student_lastname.Size = new System.Drawing.Size(291, 27);
             this.txt_student_lastname.TabIndex = 6;
@@ -136,7 +137,7 @@
             // 
             this.txt_student_email.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_student_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_student_email.Location = new System.Drawing.Point(591, 333);
+            this.txt_student_email.Location = new System.Drawing.Point(669, 364);
             this.txt_student_email.Name = "txt_student_email";
             this.txt_student_email.Size = new System.Drawing.Size(291, 27);
             this.txt_student_email.TabIndex = 7;
@@ -146,7 +147,7 @@
             // 
             this.txt_student_phone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_student_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_student_phone.Location = new System.Drawing.Point(160, 394);
+            this.txt_student_phone.Location = new System.Drawing.Point(238, 425);
             this.txt_student_phone.Name = "txt_student_phone";
             this.txt_student_phone.Size = new System.Drawing.Size(291, 27);
             this.txt_student_phone.TabIndex = 8;
@@ -158,7 +159,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(157, 312);
+            this.label4.Location = new System.Drawing.Point(235, 343);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 18);
             this.label4.TabIndex = 9;
@@ -170,7 +171,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(588, 312);
+            this.label5.Location = new System.Drawing.Point(666, 343);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 18);
             this.label5.TabIndex = 10;
@@ -182,7 +183,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(157, 373);
+            this.label6.Location = new System.Drawing.Point(235, 404);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 18);
             this.label6.TabIndex = 11;
@@ -193,7 +194,7 @@
             this.cbb_student_group.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbb_student_group.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_student_group.FormattingEnabled = true;
-            this.cbb_student_group.Location = new System.Drawing.Point(591, 393);
+            this.cbb_student_group.Location = new System.Drawing.Point(669, 424);
             this.cbb_student_group.Name = "cbb_student_group";
             this.cbb_student_group.Size = new System.Drawing.Size(291, 28);
             this.cbb_student_group.TabIndex = 12;
@@ -204,7 +205,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(588, 373);
+            this.label7.Location = new System.Drawing.Point(666, 404);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 18);
             this.label7.TabIndex = 13;
@@ -217,7 +218,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(157, 437);
+            this.label8.Location = new System.Drawing.Point(235, 468);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 18);
             this.label8.TabIndex = 15;
@@ -228,7 +229,7 @@
             this.cbb_student_gender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbb_student_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_student_gender.FormattingEnabled = true;
-            this.cbb_student_gender.Location = new System.Drawing.Point(160, 457);
+            this.cbb_student_gender.Location = new System.Drawing.Point(238, 488);
             this.cbb_student_gender.Name = "cbb_student_gender";
             this.cbb_student_gender.Size = new System.Drawing.Size(291, 28);
             this.cbb_student_gender.TabIndex = 14;
@@ -239,7 +240,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Blue;
-            this.label9.Location = new System.Drawing.Point(588, 437);
+            this.label9.Location = new System.Drawing.Point(666, 468);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 18);
             this.label9.TabIndex = 17;
@@ -250,7 +251,7 @@
             this.cbb_student_type.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbb_student_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_student_type.FormattingEnabled = true;
-            this.cbb_student_type.Location = new System.Drawing.Point(591, 457);
+            this.cbb_student_type.Location = new System.Drawing.Point(669, 488);
             this.cbb_student_type.Name = "cbb_student_type";
             this.cbb_student_type.Size = new System.Drawing.Size(291, 28);
             this.cbb_student_type.TabIndex = 16;
@@ -260,7 +261,7 @@
             this.dtp_student_dob.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtp_student_dob.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_student_dob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_student_dob.Location = new System.Drawing.Point(160, 520);
+            this.dtp_student_dob.Location = new System.Drawing.Point(238, 551);
             this.dtp_student_dob.Name = "dtp_student_dob";
             this.dtp_student_dob.Size = new System.Drawing.Size(291, 27);
             this.dtp_student_dob.TabIndex = 18;
@@ -271,7 +272,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(157, 499);
+            this.label10.Location = new System.Drawing.Point(235, 530);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 18);
             this.label10.TabIndex = 19;
@@ -282,7 +283,7 @@
             this.btn_student_isactive.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_student_isactive.AutoSize = true;
             this.btn_student_isactive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_student_isactive.Location = new System.Drawing.Point(591, 523);
+            this.btn_student_isactive.Location = new System.Drawing.Point(669, 554);
             this.btn_student_isactive.Name = "btn_student_isactive";
             this.btn_student_isactive.Size = new System.Drawing.Size(94, 24);
             this.btn_student_isactive.TabIndex = 20;
@@ -290,39 +291,40 @@
             this.btn_student_isactive.Text = "Is Active";
             this.btn_student_isactive.UseVisualStyleBackColor = true;
             // 
-            // btn_save
+            // btn_student_save
             // 
-            this.btn_save.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_save.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_save.Location = new System.Drawing.Point(697, 514);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(86, 33);
-            this.btn_save.TabIndex = 21;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_student_save.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_student_save.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_student_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_student_save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_student_save.Location = new System.Drawing.Point(775, 545);
+            this.btn_student_save.Name = "btn_student_save";
+            this.btn_student_save.Size = new System.Drawing.Size(86, 33);
+            this.btn_student_save.TabIndex = 21;
+            this.btn_student_save.Text = "Save";
+            this.btn_student_save.UseVisualStyleBackColor = false;
             // 
-            // btn_close
+            // btn_student_close
             // 
-            this.btn_close.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_close.BackColor = System.Drawing.Color.OrangeRed;
-            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_close.Location = new System.Drawing.Point(796, 514);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(86, 33);
-            this.btn_close.TabIndex = 22;
-            this.btn_close.Text = "Close";
-            this.btn_close.UseVisualStyleBackColor = false;
+            this.btn_student_close.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_student_close.BackColor = System.Drawing.Color.OrangeRed;
+            this.btn_student_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_student_close.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_student_close.Location = new System.Drawing.Point(874, 545);
+            this.btn_student_close.Name = "btn_student_close";
+            this.btn_student_close.Size = new System.Drawing.Size(86, 33);
+            this.btn_student_close.TabIndex = 22;
+            this.btn_student_close.Text = "Close";
+            this.btn_student_close.UseVisualStyleBackColor = false;
             // 
             // formStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 617);
-            this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.btn_save);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1217, 617);
+            this.Controls.Add(this.btn_student_close);
+            this.Controls.Add(this.btn_student_save);
             this.Controls.Add(this.btn_student_isactive);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dtp_student_dob);
@@ -375,7 +377,7 @@
         private System.Windows.Forms.DateTimePicker dtp_student_dob;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RadioButton btn_student_isactive;
-        private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.Button btn_student_save;
+        private System.Windows.Forms.Button btn_student_close;
     }
 }

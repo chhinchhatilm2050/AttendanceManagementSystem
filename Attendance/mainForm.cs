@@ -28,5 +28,11 @@ namespace Attendance
             Student.formStudent formStudent = new Student.formStudent();
             formStudent.ShowDialog();
         }
+
+        private void createToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Teacher.formTeacher formTeacher = new Teacher.formTeacher();
+            formTeacher.ShowDialog();
+        }
     }
 }
